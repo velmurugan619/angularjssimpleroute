@@ -6,6 +6,10 @@ angular.module('myApp', ['ui.router'])
             url: '/',
             templateUrl: '../home/home.html'
         })
+        .state('home.testimonial', {
+          url: '/testimonial',
+          templateUrl: './home/testimonial.html'
+        })
         .state('about', {
             url: '/about/:id',
             templateUrl: '../about/about.html',
